@@ -11,7 +11,7 @@ threads = 4
 worker = 0  
 
 # here you need to specify the parameters with suffix _run.yaml in your model's output folder (not param_run_in.yaml)
-print("Open parameters file\n")
+print("Open param_run file\n")
 param_path = gui()
 print("Open model file\n")
 model_path = gui()

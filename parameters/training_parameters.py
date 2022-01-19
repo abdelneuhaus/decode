@@ -10,7 +10,8 @@ worker = 4  # number of workers for data loading. Change only if you know what y
 print("Open calibration file\n")
 calib_file = gui()   # calibration file (from SMAP)
 
-param = decode.utils.param_io.load_params('param_friendly.yaml')  # change path if you load custom file
+print("Open param_friendly file\n")
+param = decode.utils.param_io.load_params(gui())  # change path if you load custom file
 
 # Camera parameters
 param.Camera.baseline = 500

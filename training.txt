@@ -1,0 +1,13 @@
+To start training we recommend to start it from a new terminal window/Anaconda prompt as this is most stable. 
+
+conda activate decode_env
+cd [directory where this notebook is]
+python -m decode.neuralfitter.train.live_engine -p notebook_example.yaml
+
+
+
+To check training progress you may start a tensorboard instance. Again, please open a new terminal instance and navigate (within the terminal, in a new terminal window/tab) to the directory of this notebook and start tensorboard. Don't forget to activate the conda environment before starting tensorboard.
+
+    cd [directory which containts 'runs', i.e. this notebook's path]
+    conda activate decode_env
+    tensorboard --samples_per_plugin images=100 --port=6006 --logdir=runs
